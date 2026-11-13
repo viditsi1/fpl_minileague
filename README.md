@@ -1,10 +1,15 @@
 # FPL Mini-League Differential Tracker
 
-A Python script that interacts with the official **Fantasy Premier League (FPL)** API to generate a real-time **Differential Leaderboard** for your specific mini-league. It automatically detects and supports both **FPL Classic** and **FPL Draft** leagues!
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/viditsi1/fpl_minileague/blob/main/fpl_minileague_differentials.ipynb)
+
+A Python tool that interacts with the official **Fantasy Premier League (FPL)** API to generate a real-time **Differential Leaderboard** for your specific mini-league. It automatically detects and supports both **FPL Classic** and **FPL Draft** leagues!
+
+> 🚀 **Quickest Way to Run & Share**: Anyone can run this in their web browser with **zero installation** on any device (phone or computer) by clicking the **[Open In Colab](https://colab.research.google.com/github/viditsi1/fpl_minileague/blob/main/fpl_minileague_differentials.ipynb)** badge above!
 
 ---
 
 ## Table of Contents
+- [Quick Start: 3 Ways to Use](#quick-start-3-ways-to-use)
 - [Features](#features)
 - [How It Works](#how-it-works)
 - [Python Installation Guide](#python-installation-guide)
@@ -14,9 +19,18 @@ A Python script that interacts with the official **Fantasy Premier League (FPL)*
   - [Linux (Ubuntu / Debian / Fedora)](#linux-ubuntu--debian--fedora)
 - [Project Setup](#project-setup)
 - [Finding Your League ID & Gameweek](#finding-your-league-id--gameweek)
-- [Running the Script](#running-the-script)
+- [Running the CLI Script](#running-the-cli-script)
+- [Running the Streamlit Web App](#running-the-streamlit-web-app)
 - [Sample Output](#sample-output)
 - [Configuration Options](#configuration-options)
+
+---
+
+## Quick Start: 3 Ways to Use
+
+1. **In the Browser (Zero Installation)**: Click the **[Open in Colab](https://colab.research.google.com/github/viditsi1/fpl_minileague/blob/main/fpl_minileague_differentials.ipynb)** badge, enter your League ID, and run.
+2. **Interactive Web App**: Run `streamlit run app.py` for a visual dashboard with interactive filters and CSV download.
+3. **Terminal CLI**: Run `python3 minileague_differentials.py` for fast terminal output.
 
 ---
 
@@ -201,7 +215,7 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Script
+## Running the CLI Script
 
 Ensure your virtual environment is activated, then run:
 
@@ -216,6 +230,19 @@ Enter Gameweek ID: 10
 
 Fetching data, please wait...
 ```
+
+---
+
+## Running the Streamlit Web App
+
+For a graphical, interactive dashboard with filters and CSV export:
+
+```bash
+streamlit run app.py
+```
+This will automatically launch the web interface in your browser at `http://localhost:8501`.
+
+> 💡 **Deploy Free to the Web**: You can also link your GitHub repository to [share.streamlit.io](https://share.streamlit.io/) with 1 click to get a permanent public URL (e.g. `https://your-app.streamlit.app`) to share with friends!
 
 ---
 
