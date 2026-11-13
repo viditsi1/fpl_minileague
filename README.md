@@ -206,7 +206,7 @@ pip install -r requirements.txt
 Ensure your virtual environment is activated, then run:
 
 ```bash
-python3 fpl.py
+python3 minileague_differentials.py
 ```
 
 You will be prompted:
@@ -245,7 +245,7 @@ Fetching data, please wait...
 
 ## Configuration Options
 
-Open [fpl.py](file:///Users/vidit/fpl/fpl/fpl_minileague/fpl.py) to customize tracking behavior:
+Open [minileague_differentials.py](minileague_differentials.py) to customize tracking behavior:
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
