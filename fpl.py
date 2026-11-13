@@ -32,18 +32,36 @@ player_names = {p["id"]: p["web_name"] for p in bootstrap["elements"]}
 live_data = requests.get(f"{fpl_base}/event/{GAMEWEEK_ID}/live/", headers=headers).json()
 player_points = {p["id"]: p["stats"]["total_points"] for p in live_data["elements"]}
 
-# 3. Fetch Mini-League entries (Classic first, fallback to Draft)
-classic_resp = requests.get(f"{fpl_base}/leagues-classic/{LEAGUE_ID}/standings/", headers=headers)
+# 3. Fetch Mini-League entries (Classic with pagination first, fallback to Draft)
+classic_resp = requests.get(f"{fpl_base}/leagues-classic/{LEAGUE_ID}/standings/?page_standings=1", headers=headers)
 
 if classic_resp.status_code == 200:
-    league_data = classic_resp.json()
-    league_name = league_data["league"]["name"]
-    entries = [
-        {"entry_id": m["entry"], "team": m["entry_name"], "manager": m["player_name"]}
-        for m in league_data["standings"]["results"]
-    ]
-    picks_template = f"{fpl_base}/entry/{{entry_id}}/event/{GAMEWEEK_ID}/picks/"
+    entries = []
+    page = 1
     mode = "Classic"
+    while True:
+        if page > 1:
+            classic_resp = requests.get(
+                f"{fpl_base}/leagues-classic/{LEAGUE_ID}/standings/?page_standings={page}",
+                headers=headers,
+            )
+            if classic_resp.status_code != 200:
+                break
+
+        league_data = classic_resp.json()
+        if page == 1:
+            league_name = league_data["league"]["name"]
+
+        entries.extend([
+            {"entry_id": m["entry"], "team": m["entry_name"], "manager": m["player_name"]}
+            for m in league_data["standings"]["results"]
+        ])
+
+        if not league_data["standings"].get("has_next"):
+            break
+        page += 1
+
+    picks_template = f"{fpl_base}/entry/{{entry_id}}/event/{GAMEWEEK_ID}/picks/"
 else:
     draft_resp = requests.get(f"{draft_base}/league/{LEAGUE_ID}/details", headers=headers)
     draft_resp.raise_for_status()
