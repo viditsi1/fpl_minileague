@@ -222,23 +222,23 @@ Fetching data, please wait...
 ## Sample Output
 
 ```text
-=== Warrior's Punt (Classic | 50 Teams) | GW10 Mini-League Differentials ===
+=== Warrior's Punt (Classic | 52 Teams) | GW10 Mini-League Differentials ===
 
- 1. Ødegaard        | 11 pts | Owned by 1/50 (  2.0%) | OG 11 (Akshay Sathyanarayanan)
- 2. B.Fernandes     | 10 pts | Owned by 1/50 (  2.0%) | Rebel Devils (Prasad P)
- 3. Barcola         |  5 pts | Owned by 1/50 (  2.0%) | OCD XV (Mithil Chavan)
- 4. Cunha           |  5 pts | Owned by 1/50 (  2.0%) | TrueBlueBhat (parikshit bhat)
- 5. A.Becker        |  4 pts | Owned by 1/50 (  2.0%) | Cunha Matata (sanjay balrajani)
- 6. Tzolis          |  3 pts | Owned by 1/50 (  2.0%) | Immortals (Sid Nambiar)
- 7. Pickford        |  3 pts | Owned by 1/50 (  2.0%) | Snaydoooo (Snehanshu Gupta)
- 8. Rayan           |  2 pts | Owned by 1/50 (  2.0%) | Wirtz Case Scenario (Falak Shah)
- 9. Truffert        |  2 pts | Owned by 1/50 (  2.0%) | OG 11 (Akshay Sathyanarayanan)
-10. Robertson       |  2 pts | Owned by 1/50 (  2.0%) | OCD XV (Mithil Chavan)
-11. Doku            |  2 pts | Owned by 1/50 (  2.0%) | VishalBull (Vishal Bulchandani)
-12. N.Williams      |  2 pts | Owned by 1/50 (  2.0%) | Snaydoooo (Snehanshu Gupta)
-13. Robinson        |  2 pts | Owned by 1/50 (  2.0%) | SafedNeela11 (Rajit Rajan)
-14. Kamada          |  2 pts | Owned by 1/50 (  2.0%) | SafedNeela11 (Rajit Rajan)
-15. Havertz         |  2 pts | Owned by 1/50 (  2.0%) | ThinkOut (suraj khandelwal)
+ 1. Ødegaard        | 11 pts | Owned by 1/52 (  1.9%) | OG 11 (Akshay Sathyanarayanan)
+ 2. B.Fernandes     | 10 pts | Owned by 1/52 (  1.9%) | Rebel Devils (Prasad P)
+ 3. Ajayi           |  6 pts | Owned by 1/52 (  1.9%) | InvincibleCool (Sankalp Gupta)
+ 4. Barcola         |  5 pts | Owned by 1/52 (  1.9%) | OCD XV (Mithil Chavan)
+ 5. Cunha           |  5 pts | Owned by 1/52 (  1.9%) | TrueBlueBhat (parikshit bhat)
+ 6. A.Becker        |  4 pts | Owned by 1/52 (  1.9%) | Cunha Matata (sanjay balrajani)
+ 7. Tzolis          |  3 pts | Owned by 1/52 (  1.9%) | Immortals (Sid Nambiar)
+ 8. Pickford        |  3 pts | Owned by 1/52 (  1.9%) | Snaydoooo (Snehanshu Gupta)
+ 9. Rayan           |  2 pts | Owned by 1/52 (  1.9%) | Wirtz Case Scenario (Falak Shah)
+10. Truffert        |  2 pts | Owned by 1/52 (  1.9%) | OG 11 (Akshay Sathyanarayanan)
+11. Robertson       |  2 pts | Owned by 1/52 (  1.9%) | OCD XV (Mithil Chavan)
+12. Doku            |  2 pts | Owned by 1/52 (  1.9%) | VishalBull (Vishal Bulchandani)
+13. N.Williams      |  2 pts | Owned by 1/52 (  1.9%) | Snaydoooo (Snehanshu Gupta)
+14. Robinson        |  2 pts | Owned by 1/52 (  1.9%) | SafedNeela11 (Rajit Rajan)
+15. Kamada          |  2 pts | Owned by 1/52 (  1.9%) | SafedNeela11 (Rajit Rajan)
 ```
 
 ---
